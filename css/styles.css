@@ -1,0 +1,215 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+ 
+  margin: auto;
+ padding: 2rem;
+}
+
+/* main */
+.fear {
+  display: none;
+}
+.flex-container {
+  display: flex;
+}
+.avoid-clicks {
+  pointer-events: none;
+}
+
+.spacing {
+  margin-top: 3rem;
+}
+.zero-pad {
+  padding: 0px;
+  display: flex;
+}
+.teal {
+  padding: 0.4rem;
+  text-align: center;
+  background-color: #45b8be;
+  color: white;
+  font-weight: bold;
+}
+.orange {
+  padding: 0.4rem;
+  text-align: center;
+  background-color: #e66712;
+  color: white;
+  font-weight: bold;
+}
+
+.best-seller {
+  margin-left: 15px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+.share-btn {
+  color: #686868;
+}
+.share-img {
+  width: 20px;
+  padding-top: 0;
+}
+.right {
+  float: right;
+}
+
+.button-share {
+  border: none;
+  background-color: white;
+  
+}
+
+/* Image Product  */
+.product-img {
+  margin-top: 1rem;
+}
+
+/* text */
+.text-header {
+  margin: 1rem;
+  max-width: 900px;
+}
+.header {
+  text-align: left;
+  font-weight: bold;
+  color: #e66712;
+}
+.text {
+  font-weight: bold;
+  
+}
+
+h5 .text {
+  padding: 3rem;
+}
+.bullet {
+  color: #45b8be;
+}
+
+.list-text {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+/* Pick lists */
+.size {
+  margin-top: 2rem;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  width: 13rem;
+}
+
+/* Modal  */
+.icons {
+  width: 2rem;
+  margin: auto;
+}
+.facebook {
+  width: 1rem;
+}
+.modal-text {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.modal-body {
+  /* 100% = dialog height, 120px = header + footer */
+  max-height: inherit;
+  overflow-y: scroll;
+}
+
+.cancel {
+  margin: auto;
+  width: 2rem;
+  border: none;
+  background-color: white;
+  color: black;
+}
+.cancel :hover {
+  color: red;
+}
+.icon {
+  width: 25px;
+}
+
+.icon :hover {
+  width: 30px;
+}
+
+.strike {
+  font-weight: 400;
+  color: lightgrey;
+  text-decoration: line-through;
+}
+
+.final {
+  font-size: x-large;
+}
+.quantity {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  font-weight: 800;
+  font-size: x-large;
+}
+.quantity button {
+  background-color: white;
+  text-decoration: none;
+  border: none;
+  width: 3rem;
+  font-size: x-large;
+}
+#itemQuantity {
+  z-index: 1;
+  width: 3rem;
+  border-left: solid 3px lightgray;
+  border-right: solid 3px lightgray;
+}
+#addToCart {
+  border: none;
+  
+  padding: 1rem;
+}
+
+.toHide {
+  margin: auto;
+}
+
+/* hover effect */
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+}
+
+button:focus {outline:0;}
+
+@media only screen and (max-width: 1024px) {
+  * {
+  padding: 0;
+    margin: auto;
+    padding-top: 0.5rem;
+    
+  }
+
+  body {
+    padding: 1rem;
+    width: 100%;
+    
+  }
+  #addToCart {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+ 
+}

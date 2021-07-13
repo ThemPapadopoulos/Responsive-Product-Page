@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="css/normalize.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <title>Responsive Product Page</title>
+</head>
+
+<body>
+  <!-- modal -->
+  <div class="row">
+    <div class="col-6-sm">
+      <div class="modal fade" id="exampleModal" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog  p-5" role="document">
+          <div class="modal-content p-2">
+            <div class="container">
+              <div class="row d-flex justify-content-center">
+                <div class="col-12">
+                  <h1 class="modal-text d-flex justify-content-center">
+                    SHARE
+                  </h1>
+                </div>
+              </div>
+              <div class="row d-flex p-5 ml-3 justify-content-between align-middle">
+                <div class="col-4 grow ">
+                  <img class="facebook modal-icon d-flex justify-content-center" src="images/icons/facebook.svg" alt="facebook" />
+                </div>
+                <div class="col-4 grow">
+                  <img class="icons" src="images/icons/twitter.svg" alt="tweeter" />
+                </div>
+                <div class="col-4 grow">
+                  <img class="icons" src="images/icons/pinterest.svg" alt="pinterest" />
+                </div>
+              </div>
+              <div class="row d-flex justify-content-center">
+                <button type="button" class="py-2 cancel grow" data-dismiss="modal">
+                  <img src="images/icons/cancel.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
+    <div class="container  ">
+      <div class="row toHide">
+        <div class="flex-container">
+          <div class="teal">ΝΕΟ</div>
+          <div class="orange">-20%</div>
+          <div class="best-seller">BEST SELLER</div>
+        </div>
+      </div>
+
+
+      <div class="col-6 d-flex justify-content-center">
+        <button type="button" class="flex-container align-middle right grow button-share" data-toggle="modal"
+          data-target="#exampleModal">
+          <img class="share-img" src="images/icons/share.svg" alt="share" />
+          Share
+        </button>
+      </div>
+    </div>
+
+    <div class=" toHide row">
+      <div class="col-6-lg p-1 product-img">
+        <img src="images/product_photo.jpg" alt="product" />
+      </div>
+      <div class="col-6-sm p-1 text-header">
+        <h4 class="header">FREZYDERM</h4>
+        <h5 class="text">
+          Frezyderm Spot End Night Cream & Δώρο Spot End Corrective 15ml Lorem
+          Ipsum is simply dummy text of the printing
+        </h5>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-6-m flex-column">
+              <h6 class="list-text">
+                <span class="bullet">●</span> Άμμεσα Διαθέσιμο
+              </h6>
+              <h6>Κωδικός 54568638</h6>
+              <select id="options" class="size grow" name="list">
+                <option value="" class="size">Μέγεθος</option>
+              </select>
+              <br />
+              <select id="options" class="size grow" name="list">
+                <option value="color">Χρώμα</option>
+              </select>
+
+              <div class="p-2 spacing text grow">
+                <img src="./images/icons/wishlist.svg" class="icon" alt="wishlist" />ΠΡΟΣΘΗΚΗ ΣΤΗ WISHLIST
+              </div>
+            </div>
+
+            <div class="secondColumn mt-2 flex-column w-100 col-6">
+              <div class="
+                    spacing
+                    d-flex
+                    justify-content-center
+                    row
+                    align-items-end
+                  ">
+                <div class="strike mr-2">
+                  <span></span>
+                  €
+                </div>
+                <div class="ml-2 final"><span id="finalPrice"></span> €</div>
+              </div>
+              <div class="spacing quantity row d-flex justify-content-center">
+                <button class="grow" id="minus">-</button>
+                <span id="itemQuantity">1</span>
+                <button class="grow" id="plus">+</button>
+              </div>
+              <div class="row w-100 spacing d-flex justify-content-center">
+                <button class="teal grow" id="addToCart">
+                  <img src="./images/icons/cart.svg" class="icon" id="
+              cartIcon" alt="cart" />
+                  ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
